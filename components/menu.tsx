@@ -1,6 +1,11 @@
-export default function Menu() {
-	return (
-		<>
-		</>
-	);
-}
+import * as React from "react";
+
+export const Menu = (
+) => {
+  return (
+    <>
+      <nav>
+      </nav>
+    </>
+  );
+};

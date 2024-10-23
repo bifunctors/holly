@@ -1,4 +1,4 @@
-import { CameraFull, HouseFull, HouseOutline, CameraOutline } from "@/components/icons";
+import { CameraFull, HouseFull, HouseOutline, CameraOutline, Settings } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <HouseOutline />
       <CameraFull />
       <CameraOutline />
+      <Settings />
     </>
   );
 }

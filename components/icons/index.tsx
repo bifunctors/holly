@@ -5,4 +5,5 @@ export {
   HouseOutline,
   CameraFull,
   CameraOutline,
+  Settings,
 } from "./menu-icons";
