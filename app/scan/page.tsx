@@ -1,18 +1,15 @@
 import { CameraFull, HouseFull, HouseOutline, CameraOutline, Settings } from "@/components/icons";
-import { StarFull, StarOutline } from "@/components/icons/menu-icons";
 import { Menu } from "@/components/menu";
 
-export default function Home() {
+export default function Scan() {
   return (
     <>
       <HouseFull />
       <HouseOutline />
       <CameraFull />
       <CameraOutline />
-      <StarFull />
-      <StarOutline />
-
       <Settings />
+
       <Menu />
     </>
   );
