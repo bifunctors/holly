@@ -5,5 +5,6 @@ export {
   HouseOutline,
   CameraFull,
   CameraOutline,
-  Settings,
+  StarFull,
+  StarOutline,
 } from "./menu-icons";

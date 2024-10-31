@@ -1,19 +1,11 @@
-import { CameraFull, HouseFull, HouseOutline, CameraOutline, Settings } from "@/components/icons";
-import { StarFull, StarOutline } from "@/components/icons/menu-icons";
 import { Menu } from "@/components/menu";
+import { PlayPauseButton } from "@/components/play-pause-button";
+import { Player } from "@/components/player";
 
 export default function Home() {
   return (
     <>
-      <HouseFull />
-      <HouseOutline />
-      <CameraFull />
-      <CameraOutline />
-      <StarFull />
-      <StarOutline />
-
-      <Settings />
-      <Menu />
+      <Player />
     </>
   );
 }
