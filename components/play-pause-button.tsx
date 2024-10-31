@@ -7,7 +7,7 @@ const PlayPath = () => {
     <motion.svg
       fill="black"
       fillRule="evenodd"
-      viewBox="-30 0 512 512"
+      viewBox="-20 0 512 512"
       width={22}
       height={22}
       className="z-1"
@@ -60,7 +60,9 @@ const PausePath = () => {
 export const PlayPauseButton: React.FC<{ isPlaying: boolean, onClick: React.MouseEventHandler<HTMLDivElement> }> = ({ isPlaying, onClick }) => {
   return (
     <div className="bg-white h-10 min-w-10 w-10 rounded-full items-center justify-center flex" onClick={onClick}>
-      {isPlaying ? <PausePath key="1" /> : <PlayPath key="2" />}
+      <motion.div initial={false}>
+        {isPlaying ? <PausePath key="1" /> : <PlayPath key="2" />}
+      </motion.div>
     </div >
   );
 }
