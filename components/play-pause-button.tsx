@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const PlayPath = () => {
   return (
@@ -60,9 +60,9 @@ const PausePath = () => {
 export const PlayPauseButton: React.FC<{ isPlaying: boolean, onClick: React.MouseEventHandler<HTMLDivElement> }> = ({ isPlaying, onClick }) => {
   return (
     <div className="bg-white h-10 min-w-10 w-10 rounded-full items-center justify-center flex" onClick={onClick}>
-      <motion.div initial={false}>
+      <AnimatePresence mode="wait" initial={false}>
         {isPlaying ? <PausePath key="1" /> : <PlayPath key="2" />}
-      </motion.div>
+      </AnimatePresence>
     </div >
   );
 }

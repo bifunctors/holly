@@ -15,6 +15,7 @@ export const MenuBurger: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
           open: { rotate: 45, y: 6 },
           closed: { rotate: 0, y: 0 },
         }}
+        transition={{ ease: "linear", duration: 0.1 }}
         animate={isOpen ? "open" : "closed"}
         initial={false}
       />
@@ -23,6 +24,7 @@ export const MenuBurger: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
           open: { scale: 0 },
           closed: { scale: 1 },
         }}
+        transition={{ ease: "linear", duration: 0.1 }}
         animate={isOpen ? "open" : "closed"}
         initial={false}
       />
@@ -31,6 +33,7 @@ export const MenuBurger: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
           open: { rotate: -45, y: -6 },
           closed: { rotate: 0, y: 0 },
         }}
+        transition={{ ease: "linear", duration: 0.1 }}
         animate={isOpen ? "open" : "closed"}
         initial={false}
       />
