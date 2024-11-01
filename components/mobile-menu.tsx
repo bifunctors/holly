@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const sidebar = {
@@ -26,7 +28,7 @@ export const MobileMenu: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
       initial={false}
       animate={isOpen ? "open" : "closed"}
       className="bg-zinc-800 fixed bottom-0 ">
-      <motion.div variants={sidebar}>
+      <motion.div variants={sidebar} className="fixed bottom-0 top-12 left-0 right-0 bg-zinc-950">
       </motion.div>
     </motion.nav>
   );

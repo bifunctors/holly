@@ -8,7 +8,7 @@ import { useState } from "react";
 export const TopBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="flex p-2 gap-4 w-full sm:hidden justify-between">
+    <div className="flex p-2 gap-4 w-full sm:hidden justify-between sticky top-0 left-0 right-0 bg-zinc-950 h-12 items-center">
       <div onClick={() => setMobileMenuOpen((prev) => { return !prev; })}>
         <MenuBurger isOpen={mobileMenuOpen} />
       </div>

@@ -26,7 +26,11 @@ export const Player = () => {
 
   return (
     <div className="flex fixed bottom-0 left-0 bg-zinc-950 right-0 h-20 p-4 gap-4 items-center">
-      <PlayPauseButton isPlaying={isPlaying} onClick={() => setIsPlaying((prev) => { return !prev; })} />
+      <PlayPauseButton isPlaying={isPlaying} onClick={() => setIsPlaying((prev) => {
+        console.log(prev);
+
+        return !prev;
+      })} />
       <CurrentlyPlayingText title={songTitle} description={songDescription} />
 
       <SongProgress progress={progress} />
