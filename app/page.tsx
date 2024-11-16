@@ -1,12 +1,9 @@
 import { Card } from "@/components/card";
-import { Player } from "@/components/player";
 
 export default function Home() {
   const suggestions: string[] = ["Suggestion 1", "Suggestion 2", "Suggestion 3", "Suggestion 4", "Suggestion 5", "Suggestion 6"];
   return (
     <>
-      <Player />
-
       <div className="flex flex-col p-4 gap-8">
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-bold">Suggestions:</h1>
@@ -28,7 +25,6 @@ export default function Home() {
         </div>
         <Card className="p-4 h-80">
         </Card>
-        <div className="h-16" />
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import { TopBar } from "@/components/top-bar";
 import { MobileMenu } from "@/components/mobile-menu";
+import { Player } from "@/components/player";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,9 +23,9 @@ export default function RootLayout({
       <body className={cn(inter.className, "dark flex flex-col justify-center")}>
         <div className="container justify-center">
           <TopBar />
-          <MobileMenu isOpen={true} />
           {children}
         </div>
+        <Player />
       </body>
     </html>
   );
