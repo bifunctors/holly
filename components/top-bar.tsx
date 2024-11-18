@@ -20,7 +20,7 @@ export const TopBar = () => {
           </Link>
           <Logo size={32} />
         </div>
-        <MobileMenu isOpen={mobileMenuOpen} />
+        <MobileMenu />
       </div>
     </>
   );
